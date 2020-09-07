@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Blackjack.css">
+</head>
+
+<body>
+
+    <div class = container-1>
+        <h2>Blackjack Game</h2>
+        <h3><span id = "blackjack-result-display">Let's Play!</span></h3>
+        <div class = flex-box-1>
+            <div id = "your-box-div">
+                <h2>You:<span id = "your-score">0</span></h2>
+            </div>
+            <div id = "computer-box-div">
+                <h2>Computer: <span id = "computer-score">0</span></h2>
+            </div>
+        </div>
+
+        <div class = "flex-box-2">
+            <div>
+                <button id = "hit-button" class = "btn-lg btn-primary mr-2">Hit</button>
+                <button id = "stand-button" class = "btn-lg btn-warning mr-2">Stand</button>
+                <button id = "reset-button" class = "btn-lg btn-danger">Reset</button>
+            </div>
+        </div>
+        
+        <div class = "flex-box-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id= "wins-count">0</span></td>
+                    <td><span id= "losses-count">0</span></td>
+                    <td><span id= "draws-count">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/Blackjack.js"></script>
+</body>
+</html>
